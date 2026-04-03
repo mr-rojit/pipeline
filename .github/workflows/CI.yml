@@ -36,6 +36,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
          context: .
+         push: true
          tags: |
             ${{ vars.DOCKERHUB_USERNAME }}/fastapi-server:latest
            
